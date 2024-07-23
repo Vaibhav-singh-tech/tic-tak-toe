@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    align-content: center;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border: 2px solid #06ff6e;
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 1rem;
+    border: none;
+}
+
+.box:hover {
+    background-color: #e0e0e0;
+}
+
+.box.disabled {
+    pointer-events: none;
+    background-color: #d6b0b0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 1.2em;
+    color: rgb(12, 12, 12);
+}
+#resetBtn
+{
+    background-color: black;
+    color: aqua;
+}
+.box.O {
+    color: rgb(255, 0, 0);
+    text-size-adjust: 5px;
+    
+}
+
+.box.X {
+   color: #ff0000; 
+}
